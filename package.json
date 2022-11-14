@@ -1,0 +1,28 @@
+{
+  "name": "hello-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SrinivasGadham/WD201.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SrinivasGadham/WD201/issues"
+  },
+  "homepage": "https://github.com/SrinivasGadham/WD201#readme",
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.31.8"
+  },
+  "dependencies": {
+    "minimist": "^1.2.7"
+  }
+}

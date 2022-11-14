@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+  <title>Registration Form with User Entries</title>
+</head>
+<style>
+  .container {
+    width: 500px;
+    height: 350px;
+    border-radius: 7px;
+    background-color: #add8e6;
+    border: 1px solid firebrick;
+    font-family: calibri;
+    font-size: 120%;
+    font-weight: bolder;
+    box-shadow: 6px 6px 30px rgb(99, 98, 100);
+  }
+  #title {
+    background-color: rgb(245, 56, 182);
+    color: white;
+    border: 1px solid firebrick;
+    padding-bottom: -1px;
+    height: 28px;
+    border-radius: 3px;
+  }
+  input#name,
+  input#email,
+  input#password,
+  input#dob {
+    height: 20px;
+    width: 100%;
+  }
+  #submit {
+    background-color: rgb(128, 75, 0);
+    height: 30px;
+    width: 50%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 105%;
+    margin-top: 10px;
+  }
+</style>
+<body bgcolor="#808080">
+  <center>
+    <form id="user-form">
+      <fieldset class="container">
+        <legend id="title">Sign Up Page</legend>
+        <table cellspacing="5" cellpadding="5">
+          <tr>
+            <td><label for="name">Name </label></td>
+            <td><input type="text" id="name" name="nm" required /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email ID </label></td>
+            <td><input type="email" id="email" name="em" required /></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password </label></td>
+            <td>
+              <input type="password" id="password" name="pass" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date Of Birth </label></td>
+            <td><input type="date" id="dob" name="DOB" required /></td>
+          </tr>
+          <tr>
+            <td align="right">
+              <input type="checkbox" id="acceptTerms" name="accept" />
+            </td>
+            <td><label for="acceptTerms">I accept Terms & Conditions of pupil first school</label></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <button type="submit" id="submit">Submit</button>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <h2>User Entries</h2>
+    <div id="user-entries"></div>
+  </center>
+  <script type="text/javascript" src="registration.js"></script>
+</body>
